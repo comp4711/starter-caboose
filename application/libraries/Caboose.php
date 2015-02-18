@@ -16,16 +16,16 @@ class Caboose {
     var $CI; // handle to CodeIgniter instance
     // define the components
     var $components = array(
-         'lightbox' => array(
-            'css' => 'jquery.lightbox-0.5.css',
-            'js' => 'jquery.lightbox-0.5.min.js',
-            'template' => 'lightbox'
-        ),
-       'confirm' => array(
-            'css' => '',
-            'js' => 'bootstrap-confirmation.js',
-            'template' => 'confirm'
-        ),
+      'lightbox' => array(
+        'css' => 'jquery.lightbox-0.5.css',
+        'js' => 'jquery.lightbox-0.5.min.js',
+        'template' => 'lightbox'
+      ),
+      'confirm' => array(
+        'css' => '',
+        'js' => 'bootstrap-confirmation.js',
+        'template' => 'confirm'
+      ),
      );
     // provide for any fields they need. this should be indexed [component][field]
     var $fields = array();
