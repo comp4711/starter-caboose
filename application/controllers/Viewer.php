@@ -44,8 +44,8 @@ class Viewer extends Application {
         if (!isset($_POST['action']))
             redirect("/");
         
-        $id = intcal($_POST['idBox']);
-        $rate = intval($POST['rate']);
+        $id = intval($_POST['idBox']);
+        $rate = intval($_POST['rate']);
         
         $record = $this->quotes->get($id);
         if ($record != null)

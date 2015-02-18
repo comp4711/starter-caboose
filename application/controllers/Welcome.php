@@ -20,7 +20,8 @@ class Welcome extends Application {
 
     function index()
     {
-        $quote = $this->quotes->get($id);
+        $choice = rand(1, $this->quotes->size());
+        $quote = $this->quotes->get($choice);
         $this->data['average'] = 
             ($quote->vote_count > 0) ? 
                 ($quote->vote_total / $quote->vote_count) : 0;
