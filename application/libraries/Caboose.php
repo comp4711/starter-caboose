@@ -26,7 +26,7 @@ class Caboose {
         'js' => 'bootstrap-confirmation.js',
         'template' => 'confirm'
       ),
-     );
+    );
     // provide for any fields they need. this should be indexed [component][field]
     var $fields = array();
     // provide for any field validations needed
