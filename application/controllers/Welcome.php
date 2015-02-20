@@ -23,6 +23,7 @@ class Welcome extends Application {
 	$this->data['pagebody'] = 'justone';    // this is the view we want shown
 	$this->data = array_merge($this->data, (array) $this->quotes->last());
 	$this->render();
+        $this->caboose->needed('jrating','hollywood');
     }
 
 }
