@@ -1,5 +1,7 @@
 Newest at top
 
+2/18/2016 2:32pm Added jRating scripts to project
+                 Incomplete step 3, configured caboose rating function 
 2/18/2016 2:04pm CABOOSE active (KLW)
 2/18/2016 1:51pm Added database configruation to database.php
                  Enabled Hooks (KLW)
