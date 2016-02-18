@@ -1,0 +1,4 @@
+Newest at top
+
+2/18/2016 1:51pm Added database configruation to database.php
+                 Enabled Hooks
