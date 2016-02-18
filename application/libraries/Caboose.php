@@ -26,6 +26,7 @@ class Caboose {
 			'css' => 'bootstrap.min.css',
 			'js' => 'bootstrap.min.js'
 		),
+                
 	);
 
 	// define the components
@@ -40,6 +41,11 @@ class Caboose {
             'js' => 'bootstrap-confirmation.js',
             'template' => 'confirm'
         ),
+        'jrating' => array(
+                        'css' => 'jRating.jquery.css',
+                        'js' => 'jRating.jquery.js',
+                        'template' => 'jrating'
+                ),
      );
     // provide for any fields they need. this should be indexed [component][field]
     var $fields = array();
