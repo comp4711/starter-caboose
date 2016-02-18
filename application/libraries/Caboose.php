@@ -5,7 +5,7 @@ if (!defined('BASEPATH'))
 
 /**
  * Class to build stuff to tack on at the end of the <body>.
- * 
+ *
  * @author		JLP
  * @copyright           Copyright (c) 2013-2015, James L. Parry
  *
@@ -14,8 +14,8 @@ class Caboose {
 
     var $result;   // where the finished form will be stored
     var $CI; // handle to CodeIgniter instance
-	
-	// define the base framework components. 
+
+	// define the base framework components.
 	// note that these are embedded in the project because they are obsolete bootstrap2
 	var $base = array(
 		'jquery' => array(
@@ -40,6 +40,11 @@ class Caboose {
             'js' => 'bootstrap-confirmation.js',
             'template' => 'confirm'
         ),
+				'jrating' => array(
+					'css' => 'jRating.jquery.css',
+					'js' => 'jRating.jquery.js',
+					'template' => 'jrating'
+				),
      );
     // provide for any fields they need. this should be indexed [component][field]
     var $fields = array();
@@ -56,7 +61,7 @@ class Caboose {
 	}
 
 	/**
-	 * specify something that we need 
+	 * specify something that we need
 	 */
 	function needed($what, $field = null)
 	{
@@ -70,7 +75,7 @@ class Caboose {
 	}
 
 	/**
-	 * Generate style elements for any components used 
+	 * Generate style elements for any components used
 	 */
 	function styles()
 	{
@@ -88,7 +93,7 @@ class Caboose {
                     $result .= '<link rel="stylesheet" type="text/css" href="/assets/css/' . $css . '"/>' . PHP_EOL;
             }
         }
-		
+
         // generate any needed CSS references
         foreach ($this->fields as $component => $needed) {
             $css = $this->components[$component]['css'];
@@ -105,7 +110,7 @@ class Caboose {
     }
 
 	/**
-	 * Generate script elements for any components used 
+	 * Generate script elements for any components used
 	 */
 	function scripts()
 	{
@@ -123,7 +128,7 @@ class Caboose {
                     $result .= '<script src="/assets/js/' . $js . '"></script>' . PHP_EOL;
             }
         }
-		
+
         // load any needed javascript files
         foreach ($this->fields as $component => $needed) {
             $js = $this->components[$component]['js'];
@@ -158,7 +163,7 @@ class Caboose {
 	}
 
 	/**
-	 * Bind a field to a template 
+	 * Bind a field to a template
 	 */
 	function bind($field, $template)
 	{
@@ -179,7 +184,7 @@ class Caboose {
 
 	/**
 	 * Return everything that is supposed to be tacked onto the end.
-	 * @return string 
+	 * @return string
 	 */
 	function trailings()
 	{
