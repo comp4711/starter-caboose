@@ -31,6 +31,8 @@ CREATE TABLE IF NOT EXISTS `quotes` (
   `who` varchar(64) NOT NULL,
   `mug` varchar(64) NOT NULL,
   `what` text NOT NULL,
+  `vote_total` int(11) NOT NULL,
+  `vote_count` int(11) NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
 
