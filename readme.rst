@@ -15,6 +15,13 @@ The Viewer controller displays all the quotes on file, by default.
 Each mugshot links to a viewer/quote method call, to display that author's quote.
 
 
+************
+Team Members
+************
+
+Nico Tan
+Jing Luo
+
 **************
 Intended Usage
 **************
@@ -41,6 +48,13 @@ Project Folders
 /data           Author mugshot images
 
 Assumed: CI system folder is in ../system3
+
+************
+Coding Style
+************
+
+Allman
+
 
 *******
 License
