@@ -25,12 +25,14 @@ SET time_zone = "+00:00";
 --
 -- Table structure for table `quotes`
 --
-
+DROP TABLE IF EXISTS `quotes`;
 CREATE TABLE IF NOT EXISTS `quotes` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `who` varchar(64) NOT NULL,
   `mug` varchar(64) NOT NULL,
   `what` text NOT NULL,
+  `vote_total` int(11) NOT NULL,
+  `vote_count` int(11) NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
 
